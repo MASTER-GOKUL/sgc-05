@@ -14,9 +14,9 @@ for(i=0;i<c.length;i++){
 n[i]=c.substring(i,i+1);}
 for(i=0;i<c.length;i++){
 	for(j=0; j<26 ;j++){
-if(n[i]==cap[j]){
-f=1;}}}
-if(f!=1){
+if((n[i]==cap[j])||(n[i]==" ")){
+f++;}}}
+if(f<c.length){
 alert("use uppercase characters(Name)");
 return false;}
 
@@ -189,7 +189,7 @@ font-size:35;
   <label for="Dept">DEPARTMENT</label></div><div>
   <select class="input_text" value="" name="Dept" id="Dept" required>
    <option value="none" selected disabled hidden></option>
-   <option value="EEE">Electeonics And Electrical Engineering</option>
+   <option value="EEE">Electronics And Electrical Engineering</option>
    <option value="CSE-A">Computer Science Engineering - [A]</option> 
    <option value="IT-B">Information Technology - [B]</option>
    <option value="AIDS">Artifical Intelligence and Data Science</option> 
